@@ -1,0 +1,45 @@
+{
+    "cli": true,
+    "target": "directory",
+    "adapterName": "hsp",
+    "title": "Husemann SmartPanel",
+    "description": "Manages and stores data from measuring devices",
+    "keywords": [
+        "husemann",
+        "smartpanel",
+        "modbus",
+        "insight"
+    ],
+    "expert": "yes",
+    "features": [
+        "adapter"
+    ],
+    "adminFeatures": [],
+    "type": "utility",
+    "startMode": "daemon",
+    "connectionType": "local",
+    "dataSource": "poll",
+    "connectionIndicator": "yes",
+    "language": "JavaScript",
+    "adminReact": "no",
+    "tools": [
+        "ESLint",
+        "type checking"
+    ],
+    "i18n": "words.js",
+    "releaseScript": "yes",
+    "devServer": "yes",
+    "devServerPort": 8081,
+    "indentation": "Space (4)",
+    "quotes": "single",
+    "es6class": "yes",
+    "authorName": "Andreas Heitmann",
+    "authorGithub": "aheitmann",
+    "authorEmail": "heitmann.andreas@husemann.de",
+    "gitRemoteProtocol": "SSH",
+    "gitCommit": "yes",
+    "defaultBranch": "main",
+    "license": "Apache License 2.0",
+    "dependabot": "yes",
+    "creatorVersion": "2.1.1"
+}

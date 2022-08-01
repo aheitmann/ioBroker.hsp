@@ -1,0 +1,101 @@
+{
+    "common": {
+        "name": "hsp",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "Husemann SmartPanel",
+        "titleLang": {
+            "en": "Husemann SmartPanel",
+            "de": "Husemann SmartPanel",
+            "ru": "Смарт-панель Хуземанна",
+            "pt": "Husemann SmartPanel",
+            "nl": "Husemann SmartPanel",
+            "fr": "Panneau intelligent Husemann",
+            "it": "Smart Panel di Husemann",
+            "es": "SmartPanel de Husemann",
+            "pl": "Husemann SmartPanel",
+            "zh-cn": "Husemann 智能面板"
+        },
+        "desc": {
+            "en": "Manages and stores data from measuring devices",
+            "de": "Verwaltet und speichert Daten von Messgeräten",
+            "ru": "Управляет и хранит данные с измерительных устройств",
+            "pt": "Gerencia e armazena dados de dispositivos de medição",
+            "nl": "Beheert en slaat gegevens van meetapparatuur op",
+            "fr": "Gère et stocke les données des appareils de mesure",
+            "it": "Gestisce e archivia i dati dai dispositivi di misurazione",
+            "es": "Gestiona y almacena datos de dispositivos de medición.",
+            "pl": "Zarządza i przechowuje dane z urządzeń pomiarowych",
+            "zh-cn": "管理和存储来自测量设备的数据"
+        },
+        "authors": [
+            "Andreas Heitmann <heitmann.andreas@husemann.de>"
+        ],
+        "keywords": [
+            "husemann",
+            "smartpanel",
+            "modbus",
+            "insight"
+        ],
+        "license": "Apache-2.0",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "hsp.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/aheitmann/ioBroker.hsp/main/admin/hsp.png",
+        "readme": "https://github.com/aheitmann/ioBroker.hsp/blob/main/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "utility",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "poll",
+        "materialize": true,
+        "dependencies": [
+            {
+                "js-controller": ">=2.0.0"
+            }
+        ]
+    },
+    "native": {
+        "option1": true,
+        "option2": "42"
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}
